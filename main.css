@@ -1,3 +1,7 @@
+.welcome a {
+  font-size: 50px;
+}
+
 .vertical-nav {
   min-width: 17rem;
   width: 17rem;

@@ -24,8 +24,10 @@ html = """
 </html>"""
 
 welcome = """
+    <div class="welcome">
         <h2> {msg:s} </h2>
         {links:s}
+    </div>
     """
 navbar = """
         <!-- Vertical navbar -->
@@ -90,7 +92,7 @@ link = """
 
 def generate_welcome():
     def generate_links():
-        return ''.join(list(map(lambda title:
+        return '<br>'.join(list(map(lambda title:
                 link.format(href=related_links[title], title=title),
                         related_links)))
 

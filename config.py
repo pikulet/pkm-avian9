@@ -12,7 +12,7 @@ def get_images(name):
 img_folder = "images/"
 
 welcome_msg = """Selling this entire collection for $88,888 SGD. 
-    Contact me @avian9 on CarousellSG"""
+    Contact me @zard9 on CarousellSG"""
 
 related_links = {
     "pikachu"   :   "https://www.google.com",
