@@ -7,7 +7,7 @@ html = """
     <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>zard9 Pokemon Collection</title>
+        <title>{title:s}</title>
         <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto|Open+Sans:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -25,7 +25,7 @@ html = """
 
 welcome = """
     <div class="welcome">
-        <h2> {msg:s} </h2>
+        <h4> {msg:s} </h4>
         {links:s}
     </div>
     """
@@ -107,9 +107,8 @@ def generate_carousel(cid):
 
 def generate_site():
     body = generate_welcome() + \
-            ''.join(list(map(lambda name:
-                                                generate_carousel(name), config)))
-    site = html.format(body=body)
+            ''.join(list(map(lambda name: generate_carousel(name), config)))
+    site = html.format(title=title, body=body)
     with open('index.html', 'w') as f:
         f.write(site)
 

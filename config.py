@@ -1,3 +1,5 @@
+title = "zard9 Charizard Collection"
+
 config = {
     # name	: (is_holo, num_images)
     "ZF"    	: ("Skyridge Crystal Charizard", 2),
@@ -75,8 +77,10 @@ def get_name(cid):
     else:
         return name
 
-welcome_msg = """Selling this entire collection for $45,000 SGD. 
-    Contact me <a href="https://www.carousell.sg/zard9/">@zard9</a> on CarousellSG"""
+welcome_msg = """Selling this entire Charizard collection for $45,000 SGD. 
+    Contact me <a href="https://www.carousell.sg/zard9/">@zard9</a> on
+    CarousellSG. I will be updating this with links to my other collections
+    soon."""
 
 related_links = {
    # "pikachu"   :   "https://www.google.com",
