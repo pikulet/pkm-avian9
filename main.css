@@ -22,6 +22,10 @@ ul li {
   margin: auto;
 }
 
+.carousel-inner img:hover {
+  width: 80%;
+}
+
 .carousel-control i {
   top: 50%;
   position: absolute;
@@ -32,3 +36,4 @@ ul li {
     transform: translateY(-50%);
   }
 }
+
