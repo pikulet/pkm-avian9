@@ -71,10 +71,10 @@ def get_name(cid):
     else:
         return name
 
-welcome_msg = """Selling this entire collection for $88,888 SGD. 
+welcome_msg = """Selling this entire collection for $45, 000 SGD. 
     Contact me @zard9 on CarousellSG"""
 
 related_links = {
-    "pikachu"   :   "https://www.google.com",
-    "raichu"    :   "https://www.facebook.com"
+   # "pikachu"   :   "https://www.google.com",
+   # "raichu"    :   "https://www.facebook.com"
 }
