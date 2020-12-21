@@ -23,7 +23,7 @@
 }
 
 @media (max-width: 1080px) {
-  .carousel-inner img:hover {
+  .carousel-inner img {
     width: 100%;
   }
 }
