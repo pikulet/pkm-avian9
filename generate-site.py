@@ -33,7 +33,7 @@ welcome = """
 carousel = """
      <div class="container">
             <h1> {name:s} </h1>
-            <div id="{cid:s}" class="carousel slide" data-ride="carousel">
+            <div id="{cid:s}" class="carousel slide" data-interval="false">
                 <!-- Carousel indicators -->
                 <ol class="carousel-indicators">
                     {cindicators:s}
