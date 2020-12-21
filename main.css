@@ -32,8 +32,10 @@ ul li {
   margin: auto;
 }
 
-.carousel-inner img:hover {
-  width: 80%;
+@media (min-width: 1080px) {
+  .carousel-inner img:hover {
+    width: 80%;
+  }
 }
 
 .carousel-control i {
