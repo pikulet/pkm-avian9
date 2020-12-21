@@ -1,9 +1,9 @@
 config = {
     # name	: (is_holo, num_images)
-    "ZO"	: ("BNIB CP6 Booster Box", 1),
-    "ZN"    	: ("Pokemon Center 2016 Pokemon Card Game Art Collection", 2),
     "ZE"	: (1, 2),
     "ZF"    	: (0, 2),
+    "ZO"	: ("BNIB CP6 Booster Box", 1),
+    "ZN"    	: ("Pokemon Center 2016 Pokemon Card Game Art Collection", 2),
     "ZA"    	: (0, 2),
     "S"		: (0, 2),
     "T"		: (0, 2),
@@ -68,13 +68,13 @@ def get_images(cid):
 def get_name(cid):
     name = config[cid][0]
     if name == 0:
-        return cid + "Holo"
+        return "Holo"
     elif name == 1:
-        return cid + "Reverse Holo"
+        return "Reverse Holo"
     else:
         return name
 
-welcome_msg = """Selling this entire collection for $45, 000 SGD. 
+welcome_msg = """Selling this entire collection for $45,000 SGD. 
     Contact me @zard9 on CarousellSG"""
 
 related_links = {
