@@ -29,25 +29,6 @@ welcome = """
         {links:s}
     </div>
     """
-navbar = """
-        <!-- Vertical navbar -->
-        <div class="vertical-nav" id="sidebar">
-
-            <ul class="nav flex-column mb-0">
-
-            {navitems:s}
-
-            </ul>
-
-        </div>
-        <!-- End vertical navbar -->"""
-
-navitem = """
-                <li class="nav-item">
-                    <a href="#{cid:s}">
-                        {name:s}
-                    </a>
-                </li>"""
 
 carousel = """
      <div class="container">
@@ -99,14 +80,14 @@ def generate_welcome():
     return welcome.format(msg=welcome_msg, links=generate_links()) 
 
 def generate_navbar():
-    navitems = ''.join(list(map(lambda name:
-        navitem.format(name=name, cid=get_cid(name)), config)))
+    navitems = ''.join(list(map(lambda cid:
+        navitem.format(name=get_name(cid), cid=cid), config)))
     return navbar.format(navitems=navitems)
 
 
-def generate_carousel(name):
-    cid = get_cid(name)
-    images = get_images(name)
+def generate_carousel(cid):
+    name = get_name(cid)
+    images = get_images(cid)
 
     def generate_cindicators(cid, num_slides):
         return cindicator_first.format(cid=cid) + ''.join(
@@ -114,8 +95,8 @@ def generate_carousel(name):
                          range(1, num_slides))))
 
     def generate_citems(images):
-        return citem_first.format(img=img_folder + images[0]) + ''.join(
-            list(map(lambda i: citem.format(img=img_folder + images[i]), 
+        return citem_first.format(img=images[0]) + ''.join(
+            list(map(lambda i: citem.format(img=images[i]), 
                              range(1, len(images)))))
 
     cindicators = generate_cindicators(cid, len(images))
@@ -125,7 +106,7 @@ def generate_carousel(name):
                            citems=citems)
 
 def generate_site():
-    body = generate_welcome() + generate_navbar() + \
+    body = generate_welcome() + \
             ''.join(list(map(lambda name:
                                                 generate_carousel(name), config)))
     site = html.format(body=body)

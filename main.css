@@ -2,34 +2,9 @@
   font-size: 50px;
 }
 
-.vertical-nav {
-  min-width: 17rem;
-  width: 17rem;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s;
-  padding-top: 50px;
-}
-
-.vertical-nav ul {
-  list-style-type: none;
-}
-
-ul li {
-  font-size: 125%;
-}
-
-@media screen and (max-width: 600px) {
-  #sidebar {
-    display: none;
-  }
-}
-
 .carousel-inner img {
   margin: auto;
+  width: 40%;
 }
 
 @media (min-width: 1080px) {
