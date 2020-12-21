@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Elegant Image Slider</title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto|Open+Sans:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <!-- Vertical navbar -->
+        <div class="vertical-nav" id="sidebar">
+
+            <ul class="nav flex-column mb-0">
+                <li class="nav-item">
+                    <a href="#c1">
+                        Card 1
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#c2">
+                        Card 2
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- End vertical navbar -->
+
+        <div class="container">
+            <h1> Card 1 </h1>
+            <div id="c1" class="carousel slide" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#c1" data-slide-to="0" class="active"></li>
+                    <li data-target="#c1" data-slide-to="1"></li>
+                    <li data-target="#c1" data-slide-to="2"></li>
+                </ol>   
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="c1-a.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="c1-a.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="c1-a.jpg" alt="">
+                    </div>						
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control left" href="#c1" data-slide="prev">
+                    <span><i class="fa fa-angle-left"></i></span>
+                </a>
+                <a class="carousel-control right" href="#c1" data-slide="next">
+                    <span><i class="fa fa-angle-right"></i></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1> Card 2 </h1>
+            <div id="c2" class="carousel slide" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#c2" data-slide-to="0" class="active"></li>
+                    <li data-target="#c2" data-slide-to="1"></li>
+                    <li data-target="#c2" data-slide-to="2"></li>
+                </ol>   
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="c1-a.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="c1-a.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="c1-a.jpg" alt="">
+                    </div>						
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control left" href="#c2" data-slide="prev">
+                    <span><i class="fa fa-angle-left"></i></span>
+                </a>
+                <a class="carousel-control right" href="#c2" data-slide="next">
+                    <span><i class="fa fa-angle-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
