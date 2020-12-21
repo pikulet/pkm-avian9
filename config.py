@@ -1,20 +1,21 @@
 config = {
     # name	: (is_holo, num_images)
-    "ZE"	: (1, 2),
-    "ZF"    	: (0, 2),
-    "ZP"	: (0, 1),
-    "ZQ"	: (0, 1),
+    "ZF"    	: ("Skyridge Crystal Charizard", 2),
+    "ZE"	: ("Skyridge Crystal Charizard Reverse Holo", 2),
+    "ZP"	: ("PSA 10 Rainbow Charizard", 1),
+    "ZQ"	: ("PSA 10 Hidden Fates Charizard", 1),
+    "ZR"        : ("PSA 10 Pre-Release Teamup Charizard", 1),
     "ZO"	: ("BNIB CP6 Booster Box", 1),
-    "ZN"    	: ("Pokemon Center 2016 Pokemon Card Game Art Collection", 2),
-    "ZA"    	: (0, 2),
-    "S"		: (0, 2),
-    "T"		: (0, 2),
-    "ZC"	: (1, 2),
-    "ZL"    	: (0, 2),
-    "ZM"    	: (0, 2),
-    "U"		: (0, 2),
-    "V"		: (0, 2),
-    "W"		: (0, 2),
+    "ZN"    	: ("BNIB Pokemon Center 2016 Pokemon Card Game Art Collection", 2),
+    "ZA"    	: ("Secret Rare Charizard", 2),
+    "S"		: ("Base Set Charizard", 2),
+    "T"		: ("Base Set 2 Charizard", 2),
+    "ZC"	: ("Legendary Reverse Charizard", 2),
+    "ZL"    	: ("Shining Charizard", 2),
+    "ZM"    	: ("XY Evolution Pre-Release Charizard", 2),
+    "U"		: ("CP6 Charizard", 2),
+    "V"		: ("CP6 Charizard", 2),
+    "W"		: ("Anniversary Charizard", 2),
     "A"		: (0, 2),
     "B"		: (0, 2),
     "C"		: (0, 2),
@@ -75,7 +76,7 @@ def get_name(cid):
         return name
 
 welcome_msg = """Selling this entire collection for $45,000 SGD. 
-    Contact me @zard9 on CarousellSG"""
+    Contact me <a href="https://www.carousell.sg/zard9/">@zard9</a> on CarousellSG"""
 
 related_links = {
    # "pikachu"   :   "https://www.google.com",
