@@ -23,6 +23,10 @@ html = """
     </body>
 </html>"""
 
+welcome = """
+        <h2> {msg:s} </h2>
+        {links:s}
+    """
 navbar = """
         <!-- Vertical navbar -->
         <div class="vertical-nav" id="sidebar">
@@ -81,6 +85,17 @@ citem = """
                         <img src="{img:s}" alt="">
                     </div>"""
 
+link = """
+        <a href="{href:s}">{title:s}</a>"""
+
+def generate_welcome():
+    def generate_links():
+        return ''.join(list(map(lambda title:
+                link.format(href=related_links[title], title=title),
+                        related_links)))
+
+    return welcome.format(msg=welcome_msg, links=generate_links()) 
+
 def generate_navbar():
     navitems = ''.join(list(map(lambda name:
         navitem.format(name=name, cid=get_cid(name)), config)))
@@ -108,7 +123,8 @@ def generate_carousel(name):
                            citems=citems)
 
 def generate_site():
-    body = generate_navbar() + ''.join(list(map(lambda name:
+    body = generate_welcome() + generate_navbar() + \
+            ''.join(list(map(lambda name:
                                                 generate_carousel(name), config)))
     site = html.format(body=body)
     with open('index.html', 'w') as f:

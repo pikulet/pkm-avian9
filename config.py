@@ -10,3 +10,11 @@ def get_images(name):
     return config[name][1]
 
 img_folder = "images/"
+
+welcome_msg = """Selling this entire collection for $88,888 SGD. 
+    Contact me @avian9 on CarousellSG"""
+
+related_links = {
+    "pikachu"   :   "https://www.google.com",
+    "raichu"    :   "https://www.facebook.com"
+}

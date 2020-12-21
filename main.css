@@ -11,11 +11,17 @@
 }
 
 .vertical-nav ul {
-  list-style-type: None;
+  list-style-type: none;
 }
 
 ul li {
   font-size: 125%;
+}
+
+@media screen and (max-width: 600px) {
+  #sidebar {
+    display: none;
+  }
 }
 
 .carousel-inner img {
