@@ -13,6 +13,12 @@
   }
 }
 
+@media (max-width: 1080px) {
+  .carousel-inner img:hover {
+    width: 100%;
+  }
+}
+
 .carousel-control i {
   top: 50%;
   position: absolute;
