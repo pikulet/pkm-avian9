@@ -73,7 +73,7 @@ def get_name(cid):
     else:
         return name
 
-welcome_msg = """Selling this entire Charizard collection for $45,000 SGD. 
+welcome_msg = """Selling this entire Charizard collection for $36,000 SGD. 
     Contact me <a href="https://www.carousell.sg/zard9/">@zard9</a> on
     CarousellSG.""" 
 
